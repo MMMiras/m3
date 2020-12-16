@@ -2,8 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-} 
+}
 
+.row {
+  margin: 0;
+}
 
 .container-fluid {
   font-family: 'Oswald', sans-serif;
@@ -12,8 +15,7 @@ body {
 
 .container-nav {
   background-image: url(https://i.postimg.cc/5N869gns/pexels-sy-donny-1841841.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-size: cover;
   font-family: 'Oswald', sans-serif;
 }
@@ -27,11 +29,9 @@ body {
 }
 
 .menu {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
   font-size: 20px;
   /* color: #596275; */
@@ -52,7 +52,6 @@ body {
   /* color:#e1b12c; */
   color: white;
   margin-bottom: 50px;
-  
 }
 
 .welcome h1 {
@@ -74,10 +73,8 @@ body {
 /* main section */
 .main-title {
   text-align: center;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   margin: 40px auto;
 }
 
@@ -108,10 +105,8 @@ body {
 }
 
 .photo-section {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 5vw;
 }
 
@@ -127,20 +122,16 @@ body {
 }
 
 .ft-class {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
 }
 
 .footer-copy {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
 }
 
 .footer-icons {
-  -ms-flex-positive: 2;
-      flex-grow: 2;
+  flex-grow: 2;
 }
 
 .footer-icons i {
@@ -154,23 +145,25 @@ body {
   line-height: 50px;
 }
 
-@media screen and (max-width: 582px) {
+
+@media screen and (max-width: 550px) {
   .menu {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
+
   .menu li {
-    margin: 10px 0;
+    margin: 5px auto;
   }
 
 }
 
 
 
+
 @media screen and (max-width: 1000px) {
   .ft-class {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
   .golden {
@@ -205,4 +198,5 @@ body {
     height: 100vh;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
