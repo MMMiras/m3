@@ -2,11 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-}
+} 
 
-.row {
-  margin: 0;
-}
 
 .container-fluid {
   font-family: 'Oswald', sans-serif;
@@ -33,7 +30,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
   list-style: none;
@@ -56,6 +52,7 @@ body {
   /* color:#e1b12c; */
   color: white;
   margin-bottom: 50px;
+  
 }
 
 .welcome h1 {
@@ -156,6 +153,19 @@ body {
   text-align: center;
   line-height: 50px;
 }
+
+@media screen and (max-width: 582px) {
+  .menu {
+      flex-direction: column;
+      text-align: center;
+  }
+  .menu li {
+    margin: 10px 0;
+  }
+
+}
+
+
 
 @media screen and (max-width: 1000px) {
   .ft-class {
