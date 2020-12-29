@@ -11,11 +11,13 @@ body {
 .container-fluid {
   font-family: 'Oswald', sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .container-nav {
   background-image: url(https://i.postimg.cc/5N869gns/pexels-sy-donny-1841841.jpg);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   font-family: 'Oswald', sans-serif;
 }
@@ -29,9 +31,12 @@ body {
 }
 
 .menu {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
   list-style: none;
   font-size: 20px;
   /* color: #596275; */
@@ -73,8 +78,10 @@ body {
 /* main section */
 .main-title {
   text-align: center;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: 40px auto;
 }
 
@@ -105,8 +112,10 @@ body {
 }
 
 .photo-section {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 5vw;
 }
 
@@ -122,16 +131,21 @@ body {
 }
 
 .ft-class {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 
 .footer-copy {
-  flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+      text-align: center;
 }
 
 .footer-icons {
-  flex-grow: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
 }
 
 .footer-icons i {
@@ -145,25 +159,20 @@ body {
   line-height: 50px;
 }
 
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .menu {
     flex-direction: column;
     text-align: center;
   }
-
   .menu li {
     margin: 5px auto;
   }
-
 }
-
-
-
 
 @media screen and (max-width: 1000px) {
   .ft-class {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     text-align: center;
   }
   .golden {
@@ -193,10 +202,9 @@ body {
 }
 
 /* Więcej niż 1001px */
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1000px) {
   .container-nav {
     height: 100vh;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
