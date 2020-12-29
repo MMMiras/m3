@@ -115,12 +115,20 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 5vw;
+  /* margin: 0 5vw; */
 }
 
 .portfolio-photo {
   text-align: center;
   margin-bottom: 50px;
+}
+.photo-section p {
+  background-color: white;
+  margin: 0;
+  padding: 1em;
+}
+.photo-section img {
+  width: 100%;
 }
 
 /* Footer */
@@ -155,6 +163,23 @@ body {
   width: 50px;
   text-align: center;
   line-height: 50px;
+}
+
+
+
+
+/* MEDIA */
+
+
+
+@media screen and (max-width: 550px) {
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu li {
+    margin: 5px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -195,21 +220,10 @@ body {
     height: 100vh;
   }
   .welcome {
-        position: absolute;  
-        top: 50%;  
-        left: 50%;  
-        transform: translate(-50%, -50%);
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=style.css.map */
-
-
-
-.photo-section p {
-  background-color: white;
-  margin: 0;
-  padding: 1em;
-}
-.photo-section img {
-  width: 100%;
-}
