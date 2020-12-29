@@ -11,7 +11,6 @@ body {
 .container-fluid {
   font-family: 'Oswald', sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 .container-nav {
@@ -140,7 +139,6 @@ body {
 .footer-copy {
   -ms-flex-positive: 1;
       flex-grow: 1;
-      text-align: center;
 }
 
 .footer-icons {
@@ -157,16 +155,6 @@ body {
   width: 50px;
   text-align: center;
   line-height: 50px;
-}
-
-@media screen and (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-    text-align: center;
-  }
-  .menu li {
-    margin: 5px auto;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -202,9 +190,20 @@ body {
 }
 
 /* Więcej niż 1001px */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
   .container-nav {
     height: 100vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+.photo-section p {
+  background-color: white;
+  margin: 0;
+  padding: 1em;
+}
+.photo-section img {
+  width: 100%;
+}
